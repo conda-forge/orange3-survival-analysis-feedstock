@@ -1,5 +1,5 @@
 {% set name = "Orange3-Survival-Analysis" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e0459e90c8e9687ebb497d36df194f8476ea4d36dc1bbbd1201bf43fba41cf7b
+  sha256: 1c0ddb4054c61e09bd48fbf20320099ee2bc02e78c43b9d47b320c1b32a4da41
 
 build:
   number: 0
