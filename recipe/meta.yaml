@@ -20,8 +20,9 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - Orange3
+    - Orange3 >=3.32.0
     - lifelines
+    - statsmodels
 
 test:
   imports:
