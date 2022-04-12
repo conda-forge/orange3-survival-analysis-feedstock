@@ -23,9 +23,12 @@ requirements:
     - Orange3 >=3.32.0
     - lifelines
     - statsmodels
+    - Orange3-Text
 
 test:
   imports:
+    - Orange
+    - Orange.canvas
     - orangecontrib.survival_analysis
 
 about:
