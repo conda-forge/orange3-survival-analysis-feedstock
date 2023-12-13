@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - Orange3
+    - Orange3 >=3.32
     - lifelines
     - statsmodels
     - pyqt
