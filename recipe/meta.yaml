@@ -10,16 +10,16 @@ source:
   sha256: c4b2df41f40e38204e0fb233fe45baec58e5c73755384a35fe9d83cd97ab512d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.9
     - pip
   run:
-    - python >=3.6
+    - python >=3.9
     - Orange3 >=3.32
     - lifelines
     - statsmodels
@@ -29,6 +29,10 @@ requirements:
 test:
   imports:
     - orangecontrib.survival_analysis
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://orange.biolab.si/
