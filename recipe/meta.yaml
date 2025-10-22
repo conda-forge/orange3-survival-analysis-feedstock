@@ -1,16 +1,16 @@
 {% set name = "Orange3-Survival-Analysis" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c4b2df41f40e38204e0fb233fe45baec58e5c73755384a35fe9d83cd97ab512d
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') | lower }}-{{ version }}.tar.gz
+  sha256: 0afd196d0c36b9337f7d40473c6bda6be7890a718e3be3f1aba039498b736b3f
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - Orange3 >=3.32
+    - Orange3 >=3.34
     - lifelines
     - statsmodels
     - pyqt
