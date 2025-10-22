@@ -21,7 +21,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - Orange3 >=3.32
+    - Orange3 >=3.34
     - lifelines
     - statsmodels
     - pyqt
